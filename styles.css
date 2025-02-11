@@ -1,0 +1,44 @@
+* {
+    font-family: "Raleway", "Courier New", Courier, monospace;
+}
+
+nav {
+    background-color: gray;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ff6c00;
+}
+
+#online-booking {
+    width: 160px;
+    height: 40px;
+    border: 1px solid #ff6c00;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#online-booking:hover {
+    border-width: 2px;
+}
+
+#about {
+    background-color: #191c26;
+}
+
+.company-info {
+    width: 500px;
+    height: 500px;
+    background-image: url(images/contact-bg.png);
+    color: white;
+    padding: 20px;
+}

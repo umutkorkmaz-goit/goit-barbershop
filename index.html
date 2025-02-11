@@ -2,30 +2,43 @@
 <html lang="tr">
     <head>
         <meta charset="UTF-8" />
-        <title>HTML Giriş Dersi</title>
+        <title>BarberShop</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <header>
+        <header id="link" class="baslik">
+            <!-- margin, padding, border -->
             <a href="#" title="Anasayfa">
-                <img src="assets/images/logo.png" alt="Logo" />
+                <img src="images/logo.png" alt="Logo" />
             </a>
             <nav>
                 <ul>
                     <li>
                         <a href="#about"> About </a>
                     </li>
-                    <li>Services and Price</li>
-                    <li>Barbers</li>
-                    <li>Contacts</li>
-
                     <li>
-                        <a href="tel:+38 044 111 11 11">+38 044 111 11 11</a>
+                        <a href="#services-and-prices"> Services and Price </a>
                     </li>
-                    <li>Online-booking</li>
+                    <li>
+                        <a href="#services-and-prices"> Barbers </a>
+                    </li>
+                    <li>
+                        <a href="#services-and-prices"> Contacts </a>
+                    </li>
                 </ul>
+                <div>
+                    <a href="tel:+38 044 111 11 11"> +38 044 111 11 11 </a>
+                    <button id="online-booking">BOOK A SERVICE</button>
+                </div>
             </nav>
         </header>
-        <main>
+        <main id="govde">
             <div id="top">
                 <ul>
                     <li>Facebook</li>
@@ -33,7 +46,7 @@
                     <li>Youtube</li>
                 </ul>
                 <div id="main-slider">
-                    <img src="assets/images/slider-img-1.png" />
+                    <img src="images/slider-img-1.png" />
 
                     <span id="barbershop">BarberShop</span>
                     <p>
@@ -45,16 +58,16 @@
             <section id="about">
                 <h1>About Us</h1>
                 <div>
-                    <img src="assets/images/img-1.jpg" alt="About Us Resim 1" />
-                    <img src="assets/images/img-2.jpg" alt="About Us Resim 2" />
+                    <img src="images/img-1.jpg" alt="About Us Resim 1" />
+                    <img src="images/img-2.jpg" alt="About Us Resim 2" />
                 </div>
-                <article>
+                <article class="company-info">
                     <h2>Best Barbershop in your city</h2>
                     <p>
                         If you want to add more confidence to your image, you
                         should definitely visit us.
                     </p>
-                    <p>
+                    <p lang="tr">
                         We are a team that never stops at what has been achieved
                         and are thirsty for changes. And when you fall into the
                         hands of our master, you will never be the same again.
@@ -70,10 +83,12 @@
             <span>© Copyright 2020</span>
             <ul>
                 <li>
-                    <a href="https://google.com" target="_blank">Facebook</a>
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
                 </li>
                 <li>
-                    <a href="https://google.com" target="_blank">Instagram</a>
+                    <a href="https://instagram.com" target="_blank"
+                        >Instagram</a
+                    >
                 </li>
                 <li>
                     <a href="https://google.com" target="_blank">Youtube</a>
