@@ -1,85 +1,395 @@
+/*--------------------------------------------------------------
+1. Genel Ayarlar
+--------------------------------------------------------------*/
 * {
     font-family: "Raleway", "Courier New", Courier, monospace;
+    box-sizing: border-box;
 }
-
-h1 {
-    color: white;
+a {
+    color: #000;
 }
-
-nav {
-    background-color: gray;
-}
-
-nav ul li {
-    list-style-type: none;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
+a:hover {
     color: #ff6c00;
 }
 
+/*--------------------------------------------------------------
+2. Header
+--------------------------------------------------------------*/
+header.site-header {
+    background-color: gray;
+    padding: 10px;
+    overflow: hidden;
+}
+header.site-header > a {
+    float: left;
+}
+header.site-header .contact-info {
+    float: right;
+}
+header.site-header nav {
+    clear: both;
+    text-align: center;
+    margin-top: 20px;
+}
+header.site-header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header.site-header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/*--------------------------------------------------------------
+3. Online Booking
+--------------------------------------------------------------*/
 #online-booking {
     width: 160px;
     height: 40px;
     border: 1px solid #ff6c00;
-    background-color: transparent;
-    color: #ffffff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
 }
-
 #online-booking:hover {
     border-width: 2px;
 }
 
-#about {
-    background-color: #191c26;
+/*--------------------------------------------------------------
+4. Slider
+--------------------------------------------------------------*/
+#slider {
+    overflow: hidden;
+}
+#main-slider {
+    text-align: center;
+    padding: 40px 0;
+}
+#main-slider img {
+    max-width: 100%;
+    height: auto;
+}
+#barbershop {
+    display: block;
+    font-size: 36px;
+    color: #fff;
+    margin-top: 20px;
 }
 
+/*--------------------------------------------------------------
+5. Hakkımızda (About)
+--------------------------------------------------------------*/
+#about {
+    padding: 40px;
+}
+.about-images {
+    text-align: center;
+    margin-bottom: 20px;
+}
 .company-info {
     width: 500px;
     height: 500px;
-    background-image: url(images/contact-bg.png);
-    color: white;
+    background-size: cover;
+    color: black;
     padding: 20px;
+    margin: 0 auto;
 }
 
-.numbers > .box {
-    background-color: #f7f7f7;
-    width: 170px;
-    height: 133px;
-    margin: 0 auto;
+/*--------------------------------------------------------------
+6. Hizmetler ve Fiyatlar Bölümü (Services & Pricing)
+--------------------------------------------------------------*/
+.services-section {
+    margin: 80px auto;
+    background-color: #191c26;
+    color: #82889f;
+    background-image: url("images/services.png");
+    text-align: center;
+    padding: 40px 0;
+}
+.services-section .subtitle {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.services-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.services-section .pricing-table {
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+.services-section .pricing-table td {
+    padding: 20px;
+    vertical-align: top;
+}
+.services-section .service {
+    width: 300px;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.services-section .service span:first-child {
+    float: left;
+}
+.services-section .service span:last-child {
+    float: right;
+}
+.services-section .service .price {
+    color: rgba(255, 255, 255, 0.8);
+}
+.services-section .book-service {
+    margin-top: 30px;
+    padding: 10px 30px;
+    border: 2px solid #ff8800;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+}
+.services-section .book-service:hover {
+    background: #ff8800;
+    color: #000;
+}
+
+/*--------------------------------------------------------------
+7. İstatistikler (Statistics)
+--------------------------------------------------------------*/
+#statistics {
+    padding: 40px 0;
+    background: #fff;
     text-align: center;
 }
-
-.numbers > .box > b.number {
-    color: #303030;
+.container-stats {
+    text-align: center;
+    margin: 50px auto;
+}
+#statistics .box {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+    background: #f7f7f7;
+    text-align: center;
+    vertical-align: top;
+    padding: 20px;
+}
+#statistics .box .number {
+    font-size: 24px;
     font-weight: bold;
-    letter-spacing: 5%;
-    font-family: "Open Sans";
-    font-size: 46px;
+}
+#statistics .box sup {
+    color: #ff5733;
+    font-size: 16px;
+}
+#statistics .content {
+    text-align: center;
+    margin-top: 30px;
+}
+#statistics .content h6 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: gray;
+}
+#statistics .content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+#statistics .content p {
+    font-size: 14px;
+    color: #555;
 }
 
-.numbers > .box > div {
-    color: #303030;
-    font-weight: 600;
-    font-size: 11px;
-    margin: 30px;
-    margin: 0 auto;
-    margin: 0 10px 20px 30px;
+/*--------------------------------------------------------------
+8. Berberler (Barbers)
+--------------------------------------------------------------*/
+#barbers {
+    padding: 40px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+.barbers-container {
+    text-align: center;
+}
+.barber {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+    vertical-align: top;
+    text-align: center;
+}
+.barber .title {
+    color: orange;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.social-icons {
+    margin: 10px 0 0;
+    text-align: center;
+    list-style: none;
+}
+.social-icons li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.social-icons li a:hover svg,
+.social-icons li a:hover i {
+    background-color: #ff6c00;
+}
 
-    margin-left: 30px;
-    margin-right: 10px;
-    margin-top: 0;
+/*--------------------------------------------------------------
+9. How It Works
+--------------------------------------------------------------*/
+#how-it-works {
+    padding: 50px 0;
+}
+.gallery-section {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+.gallery-section .text {
+    margin-bottom: 30px;
+}
+.gallery-section .text hr {
+    width: 50px;
+    border: none;
+    border-top: 2px solid #000;
+    display: inline-block;
+    margin: 0 15px;
+}
+.gallery-section .text p {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+.gallery-section .gallery img {
+    width: 22%;
+    margin: 1%;
+    display: inline-block;
+    object-fit: cover;
+}
+
+/*--------------------------------------------------------------
+10. İletişim (Contacts)
+--------------------------------------------------------------*/
+#contacts {
+    background: #191b26;
+    color: #fff;
+}
+.contact-container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+.contact-container .left,
+.contact-container .right {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+.contact-container .right {
+    background: url("images/contact-bg.png") no-repeat center center/cover;
+    padding: 40px;
+    opacity: 0.9;
+}
+#contacts h2 {
+    font-size: 28px;
+    font-weight: bold;
     margin-bottom: 20px;
 }
-
-.numbers > .box > div.plus-sign {
+.input-group {
+    width: 48%;
+    display: inline-block;
+    margin: 0 1%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.input-group.full {
+    width: 98%;
+}
+#contacts label {
+    font-size: 12px;
+    color: #bbb;
+    margin-bottom: 5px;
+    display: block;
+}
+#contacts input,
+#contacts textarea {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #555;
+    padding: 8px;
+    color: #fff;
     font-size: 16px;
-    color: #ff6c00;
-    margin-top: -50px;
-    margin-right: -50px;
+}
+#contacts textarea {
+    height: 80px;
+}
+#contacts button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: 2px solid #ff8800;
+    background: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+#contacts button:hover {
+    background: #ff8800;
+    color: #000;
+}
+.contact-container .right p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+.icon {
+    font-size: 18px;
+    margin-right: 10px;
+}
+.working-hours {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+address {
+    font-style: normal;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/*--------------------------------------------------------------
+11. Footer
+--------------------------------------------------------------*/
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+footer ul {
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+}
+footer ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+footer ul li a {
+    text-decoration: none;
 }

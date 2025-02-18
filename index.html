@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="tr">
     <head>
+        <!-- Meta bilgileri, başlık ve stil bağlantıları -->
         <meta charset="UTF-8" />
         <title>BarberShop</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,35 +18,45 @@
             rel="stylesheet"
             href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Ana stil dosyası -->
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <header id="link" class="baslik">
+        <!-- Header: Logo, menü ve iletişim -->
+        <header id="header-link" class="site-header">
             <a href="#" title="Anasayfa">
                 <img src="images/logo.png" alt="Logo" />
             </a>
             <nav>
                 <ul>
                     <li>
-                        <a href="#about"> About </a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#services-and-prices"> Services and Price </a>
+                        <a href="#services-and-prices">Services and Price</a>
                     </li>
                     <li>
-                        <a href="#barbers"> Barbers </a>
+                        <a href="#barbers">Barbers</a>
                     </li>
                     <li>
-                        <a href="#contacts"> Contacts </a>
+                        <a href="#contacts">Contacts</a>
                     </li>
                 </ul>
-                <div>
-                    <a href="tel:+38 044 111 11 11"> +38 044 111 11 11 </a>
-                    <button id="online-booking">BOOK A SERVICE</button>
-                </div>
             </nav>
+            <div class="contact-info">
+                <a href="tel:+38 044 111 11 11">+38 044 111 11 11</a>
+                <button id="online-booking">BOOK A SERVICE</button>
+            </div>
         </header>
-        <main id="govde">
+        <!-- Ana içerik -->
+        <main id="main-content">
+            <!-- Slider Bölümü -->
             <div id="top">
                 <ul>
                     <li>Facebook</li>
@@ -53,7 +64,7 @@
                     <li>Youtube</li>
                 </ul>
                 <div id="main-slider">
-                    <img src="images/slider-img-1.png" />
+                    <img src="images/slider-img-1.png" alt="Slider Resmi" />
 
                     <span id="barbershop">BarberShop</span>
                     <p>
@@ -62,11 +73,12 @@
                     </p>
                 </div>
             </div>
+            <!-- Hakkımızda Bölümü -->
             <section id="about">
                 <h1>About Us</h1>
-                <div>
-                    <img src="images/img-1.jpg" alt="About Us Resim 1" />
-                    <img src="images/img-2.jpg" alt="About Us Resim 2" />
+                <div class="about-images">
+                    <img src="images/img-1.jpg" alt="Hakkımızda Resim 1" />
+                    <img src="images/img-2.jpg" alt="Hakkımızda Resim 2" />
                 </div>
                 <article class="company-info">
                     <h2>Best Barbershop in your city</h2>
@@ -75,56 +87,252 @@
                         should definitely visit us.
                     </p>
                     <p lang="tr">
-                        We are a team that never stops at what has been achieved
-                        and are thirsty for changes. And when you fall into the
-                        hands of our master, you will never be the same again.
-                        We are a team that is always "on the same wave" with
-                        clients. Therefore, we are always ready to improve
-                        everyone who comes to us!
+                        Başarılanların peşinden gitmekten vazgeçmeyen bir
+                        ekibiz. Ustamızın ellerine geçtiğinizde artık aynı
+                        olmayacaksınız!
                     </p>
                     <a href="#">Online-Booking</a>
                 </article>
             </section>
-            <section id="services-and-price">
-                <h2>Services and Price</h2>
-                <div class="price-list">
-                    <div class="column">
-                        <ul>
-                            <li>Men’s haircut - from 300 uah.</li>
-                            <li>Beard trim - from 300 uah.</li>
-                            <li>Mustache trim - from 200 uah.</li>
-                            <li>Straight razor shave - from 200 uah.</li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <ul>
-                            <li>Trainee’s haircut - from 50 uah.</li>
-                            <li>Haircut under the nozzle - from 200 uah.</li>
-                            <li>
-                                Children’s haircut (0-12 y.o.) - from 300 uah.
-                            </li>
-                            <li>Camouflage of gray hair - from 200 uah.</li>
-                        </ul>
-                    </div>
-                </div>
-                <a href="https://google.com" class="book-a-service"
-                    >BOOK A SERVICE</a
-                >
+            <!-- Hizmetler ve Fiyatlar -->
+            <section id="services-and-price" class="services-section">
+                <p class="subtitle">
+                    SPEND TIME IN THE COMPANY OF THE BEST CRAFTSMEN
+                </p>
+                <h2>Services and Prices</h2>
+                <table class="pricing-table">
+                    <tr>
+                        <td>
+                            <div class="service">
+                                <span>Men's Haircut</span>
+                                <span class="price">from 300 UAH</span>
+                            </div>
+                            <div class="service">
+                                <span>Beard Trim</span>
+                                <span class="price">from 200 UAH</span>
+                            </div>
+                            <div class="service">
+                                <span>Mustache Trim</span>
+                                <span class="price">from 200 UAH</span>
+                            </div>
+                            <div class="service">
+                                <span>Straight Razor Shave</span>
+                                <span class="price">from 200 UAH</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="service">
+                                <span>Trainee Haircut</span>
+                                <span class="price">from 50 UAH</span>
+                            </div>
+                            <div class="service">
+                                <span>Buzz Cut</span>
+                                <span class="price">from 200 UAH</span>
+                            </div>
+                            <div class="service">
+                                <span>Kids Haircut (&lt;12 y.o.)</span>
+                                <span class="price">from 300 UAH</span>
+                            </div>
+                            <div class="service">
+                                <span>Gray Coverage</span>
+                                <span class="price">from 200 UAH</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <button class="book-service">BOOK A SERVICE</button>
             </section>
-            <section>
-                <div class="numbers">
-                    <div class="box">
-                        <br />
-                        <b class="number">600</b>
-                        <div class="plus-sign">+</div>
-                        <br />
-                        <br />
-                        <div>Satisfied Customers per Day</div>
+            <!-- İstatistikler -->
+            <section id="statistics">
+                <div class="container-stats">
+                    <div class="stats">
+                        <div class="box box1">
+                            <span class="number">600<sup>+</sup></span>
+                            <p>Satisfied Customers per Day</p>
+                        </div>
+                        <div class="box box2">
+                            <span class="number">120<sup>+</sup></span>
+                            <p>Haircuts per Day</p>
+                        </div>
+                        <div class="box box3">
+                            <span class="number">50<sup>+</sup></span>
+                            <p>Beard Trims per Day</p>
+                        </div>
+                        <div class="box box4">
+                            <span class="number">30<sup>+</sup></span>
+                            <p>Mustache Trims per Day</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h6>OLD SCHOOL</h6>
+                        <h2>Why do they come to us?</h2>
+                        <p>
+                            Only good things are said about us. But it is better
+                            to see and feel once than to read ten times.
+                        </p>
                     </div>
                 </div>
-                <div class="old-school"></div>
+            </section>
+
+            <!-- Berberler -->
+            <section id="barbers">
+                <h2>Our Barbers</h2>
+                <div class="barbers-container">
+                    <div class="barber">
+                        <img src="images/barbers/barber1.png" alt="Barber 1" />
+                        <h3>John Doe</h3>
+                        <p class="title">Senior Barber</p>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="https://instagram.com"
+                                    ><i class="fab fa-instagram"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com"
+                                    ><i class="fab fa-twitter"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="https://facebook.com"
+                                    ><i class="fab fa-facebook"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com"
+                                    ><i class="fab fa-linkedin"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="barber">
+                        <img src="images/barbers/barber2.png" alt="Barber 2" />
+                        <h3>Jane Doe</h3>
+                        <p class="title">Master Barber</p>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="https://instagram.com"
+                                    ><i class="fab fa-instagram"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com"
+                                    ><i class="fab fa-twitter"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="https://facebook.com"
+                                    ><i class="fab fa-facebook"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com"
+                                    ><i class="fab fa-linkedin"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="barber">
+                        <img src="images/barbers/barber3.png" alt="Barber 3" />
+                        <h3>Sam Smith</h3>
+                        <p class="title">Junior Barber</p>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="https://instagram.com"
+                                    ><i class="fab fa-instagram"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com"
+                                    ><i class="fab fa-twitter"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="https://facebook.com"
+                                    ><i class="fab fa-facebook"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com"
+                                    ><i class="fab fa-linkedin"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How It Works -->
+            <section id="how-it-works">
+                <div class="gallery-section">
+                    <div class="text">
+                        <hr />
+                        <p>HOW IT WORKS</p>
+                        <hr />
+                    </div>
+                    <div class="gallery">
+                        <img
+                            src="images/barbers/extra/1.png"
+                            alt="How It Works 1"
+                        />
+                        <img
+                            src="images/barbers/extra/2.png"
+                            alt="How It Works 2"
+                        />
+                        <img
+                            src="images/barbers/extra/3.png"
+                            alt="How It Works 3"
+                        />
+                        <img
+                            src="images/barbers/extra/4.png"
+                            alt="How It Works 4"
+                        />
+                    </div>
+                </div>
+            </section>
+            <!-- İletişim -->
+            <section id="contacts">
+                <div class="contact-container">
+                    <div class="left">
+                        <h2>Book a Service</h2>
+                        <form>
+                            <div class="input-group">
+                                <label for="name">NAME*</label>
+                                <input type="text" id="name" required />
+                            </div>
+                            <div class="input-group">
+                                <label for="phone">TELEPHONE*</label>
+                                <input type="tel" id="phone" required />
+                            </div>
+                            <div class="input-group full">
+                                <label for="message">MESSAGE</label>
+                                <textarea id="message"></textarea>
+                            </div>
+                            <button type="submit">SEND</button>
+                        </form>
+                    </div>
+                    <div class="right">
+                        <h2>Contacts</h2>
+                        <p>
+                            <span class="icon">📍</span> Main Street, 7A <br />
+                            Kyiv, 08132
+                        </p>
+                        <p><span class="icon">📞</span> +38 044 111 11 11</p>
+                        <p>
+                            <span class="icon">📧</span>
+                            <a href="mailto:info@barbershop.com"
+                                >info@barbershop.com</a
+                            >
+                        </p>
+                        <div class="working-hours">
+                            <p>WORKING HOURS</p>
+                            <p>Daily from 9:00 AM till 22:00 PM</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
+        <!-- Alt Bilgi -->
         <footer>
             <span>© Copyright 2020</span>
             <ul>
